@@ -1,25 +1,25 @@
 version: "3.7"
 
 services:
-  mjpg-streamer:
-    image: ha.theycallmedotcom.com:7443/stevenson/mjpg-streamer:latest
+#  mjpg-streamer:
+#    image: ha.theycallmedotcom.com:7443/stevenson/mjpg-streamer:latest
 #    build:
 #      context: ./mjpg-streamer
 #      dockerfile: Dockerfile
-    restart: always
-    privileged: true
-    ports:
-      - 8080:8080
-    environment:
-      - INPUT_FLAGS=-r 1920x1080 -f 30
-      - OUTPUT_FLAGS=-w ./www
-    volumes:
-      - /run/udev:/run/udev:ro
-    deploy:
-      restart_policy:
-        condition: none
-      placement:
-        constraints: [node.labels.octopi == 1]
+#    restart: always
+#    privileged: true
+#    ports:
+#      - 8080:8080
+#    environment:
+#      - INPUT_FLAGS=-r 1920x1080 -f 30
+#      - OUTPUT_FLAGS=-w ./www
+#    volumes:
+#      - /run/udev:/run/udev:ro
+#    deploy:
+#      restart_policy:
+#        condition: none
+#      placement:
+#        constraints: [node.labels.octopi == 1]
 
   octoprint:
     image: octoprint/octoprint:latest
