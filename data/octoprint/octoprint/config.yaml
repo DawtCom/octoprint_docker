@@ -1,0 +1,60 @@
+accessControl:
+  salt: kY4YIdQNySe66wffTDk4Y2q8mfV1xcEA
+api:
+  key: 8363E67F874D41A08119FE62D97CD1A8
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1649331900
+      _important:
+        read_until: 1521111600
+      _octopi:
+        read_until: 1646055600
+      _plugins:
+        read_until: 1651208400
+      _releases:
+        read_until: 1649772600
+  discovery:
+    upnpUuid: 436abade-5446-4b5f-be95-1f31031cfb32
+  errortracking:
+    unique_id: b62f36c1-8a82-4116-9cbd-1dafa2c0cd50
+  gcodeviewer:
+    _config_version: 1
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: false
+    unique_id: 130d9280-74b2-461e-8fda-ad9576896e55
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: _default
+server:
+  commands:
+    serverRestartCommand: s6-svc -r /var/run/s6/services/octoprint
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: o7jifT7QUR2rw2apsO6N69ok94BEg7vK
+  seenWizards:
+    backup: null
+    corewizard: 4
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
+  snapshot: http://192.168.1.152:8080/?action=snapshot
+  stream: http://octopi.local:8080/?action=stream

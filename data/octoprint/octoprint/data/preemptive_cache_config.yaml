@@ -1,0 +1,6 @@
+/:
+- _count: 5
+  _timestamp: 1651459723.7460768
+  base_url: http://octopi.local/
+  path: /
+  query_string: l10n=en

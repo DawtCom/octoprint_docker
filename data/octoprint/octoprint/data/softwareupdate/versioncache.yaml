@@ -1,0 +1,73 @@
+__version: 1.7.3
+file_check:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 1fd5482b4fa54235531810fa4bf95620
+  information:
+    local:
+      name: 2021.2.23
+      value: 2021.2.23
+    needs_online: true
+    remote:
+      name: 2021.2.23
+      release_notes: https://github.com/OctoPrint/OctoPrint-FileCheck/releases/tag/2021.2.23
+      value: 2021.2.23
+  online: true
+  possible: true
+  timestamp: 1651458010.0743294
+firmware_check:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 2cc0c5c664767763a036f68d2318d063
+  information:
+    local:
+      name: 2021.10.11
+      value: 2021.10.11
+    needs_online: true
+    remote:
+      name: 2021.10.11
+      release_notes: https://github.com/OctoPrint/OctoPrint-FirmwareCheck/releases/tag/2021.10.11
+      value: 2021.10.11
+  online: true
+  possible: true
+  timestamp: 1651458010.070931
+octoprint:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 7aae39e6642711d879e15a2d2d07fab4
+  information:
+    local:
+      name: 1.7.3
+      value: 1.7.3
+    needs_online: true
+    remote:
+      name: 1.7.3
+      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.7.3
+      value: 1.7.3
+  online: true
+  possible: true
+  timestamp: 1651458010.0768938
+pi_support:
+  available: true
+  compatible: true
+  disabled: false
+  error: null
+  hash: a3da1d71a3f7e75425c4c0ae05d3173b
+  information:
+    local:
+      name: 2021.10.28
+      value: 2021.10.28
+    needs_online: true
+    remote:
+      name: 2022.3.28
+      release_notes: https://github.com/OctoPrint/OctoPrint-PiSupport/releases/tag/2022.3.28
+      value: 2022.3.28
+  online: true
+  possible: true
+  timestamp: 1651458010.0729063
