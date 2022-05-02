@@ -1,4 +1,5 @@
 version: "3.7"
+
 services:
   mjpg-streamer:
     image: ha.theycallmedotcom.com:7443/stevenson/mjpg-streamer:latest
@@ -18,7 +19,8 @@ services:
       restart_policy:
         condition: none
       placement:
-        constraints: [node.labels.octoprint == 1]
+        constraints: [node.labels.octopi == 1]
+
   octoprint:
     image: octoprint/octoprint:latest
     restart: always
@@ -37,7 +39,7 @@ services:
       restart_policy:
         condition: none
       placement:
-        constraints: [node.labels.octoprint == 1]
+        constraints: [node.labels.octopi == 1]
 
 volumes:
   octoprint:
